@@ -5,7 +5,6 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.4;
 }
@@ -13,6 +12,7 @@ body {
 /* ===========Regsiter=========== */
 .register-layout {
   display: flex;
+  font-family: "Roboto", sans-serif;
 }
 .register-layout .register-form {
   flex-grow: 1;
@@ -132,4 +132,198 @@ body {
 }
 .register-layout .btn-gg:hover {
   background-color: #e82e1e;
+}
+
+/* ===========product-list============= */
+.product-list {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+}
+.product-list a {
+  text-decoration: none;
+}
+.product-list .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 66px;
+  padding: 0 28px;
+  border-bottom: 1px solid #ccc;
+}
+.product-list .header-left {
+  display: flex;
+  align-items: center;
+}
+.product-list .logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+}
+.product-list .header-left .slogan {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 16px;
+  color: #000;
+}
+
+.product-list .header-center {
+  border: 2px solid #ccc;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+.product-list .header-center .icon-search {
+  font-size: 1.8rem;
+  color: #ccc;
+}
+.product-list .header-center .input-search {
+  width: 350px;
+  padding: 8px;
+  outline: none;
+  border: none;
+  font-size: 1.6rem;
+}
+.product-list .header-right {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.product-list .header-right .btn-header {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.product-list .header-right .btn-course {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.product-list .header-right .btn-bell {
+  font-size: 2rem;
+  color: #ccc;
+  margin-left: 34px;
+  margin-right: 20px;
+}
+.product-list .header-right .btn-bell:hover {
+  color: #000;
+}
+.product-list .header-right .avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.product-list .content {
+  display: flex;
+}
+.product-list .nav-bar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+  padding-left: 12px;
+  width: 100px;
+  height: calc(100vh - 66px - 14px);
+  margin-right: 40px;
+  background-color: transparent;
+}
+.product-list .nav-bar .nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 16px;
+  color: #404040;
+}
+.product-list .nav-bar .nav:not(:first-child) {
+  margin-top: 4px;
+}
+.product-list .nav-bar .nav:hover {
+  background-color: #e8ebed;
+}
+.product-list .nav-bar .nav-1 {
+  background-color: #e8ebed;
+}
+.product-list .nav-bar span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+.product-list .nav-bar .nav-icon {
+  font-size: 1.8rem;
+}
+.product-list .nav-bar .nav-btn {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  outline: none;
+  margin-left: 12px;
+  font-size: 1.8rem;
+  margin-top: auto;
+  margin-bottom: 58px;
+}
+
+.product-list .main {
+  width: calc(100%-160px);
+  margin-top: 56px;
+}
+.product-list .main .all-course {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+.product-list .main .name-course {
+  color: #242424;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.product-list .main .course {
+  width: 299px;
+  height: 294px;
+  background-color: #f7f7f7;
+  border-radius: 14px;
+  margin-top: 26px;
+}
+.product-list .main .img-course {
+  width: 299px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+.product-list .main .course-desc {
+  margin: 0 18px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.product-list .main .desc {
+  display: inline-block;
+  color: #292929;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-top: 8px;
+}
+.product-list .main .cost {
+  color: #f05123;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 12px;
+}
+.product-list .main .sign-course {
+  margin-top: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #0093fc;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 1.6rem;
+}
+.product-list .main .sign-course:hover {
+  background-color: #34abf5;
 }
