@@ -143,6 +143,7 @@ body {
 .product-list a {
   text-decoration: none;
 }
+/* header */
 .product-list .header {
   display: flex;
   justify-content: space-between;
@@ -150,6 +151,7 @@ body {
   height: 66px;
   padding: 0 28px;
   border-bottom: 1px solid #ccc;
+  width: 100%;
 }
 .product-list .header-left {
   display: flex;
@@ -214,9 +216,10 @@ body {
   height: 32px;
   border-radius: 50%;
 }
-
+/* content */
 .product-list .content {
   display: flex;
+  position: relative;
 }
 .product-list .nav-bar {
   display: flex;
@@ -227,6 +230,7 @@ body {
   height: calc(100vh - 66px - 14px);
   margin-right: 40px;
   background-color: transparent;
+  position: fixed;
 }
 .product-list .nav-bar .nav {
   display: flex;
@@ -269,8 +273,9 @@ body {
 }
 
 .product-list .main {
-  width: calc(100%-160px);
+  margin-left: 160px;
   margin-top: 56px;
+  padding-bottom: 50px;
 }
 .product-list .main .all-course {
   display: flex;
