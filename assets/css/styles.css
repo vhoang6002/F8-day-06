@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* ===========Regsiter=========== */
+.register-layout {
+  display: flex;
+}
+.register-layout .register-form {
+  flex-grow: 1;
+  max-width: 50%;
+}
+.register-layout .bg-register-layout {
+  flex-grow: 1;
+  width: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg_register-layout.jpg);
+}
+.register-layout .container {
+  padding: 76px 148px 90px;
+  display: flex;
+  flex-direction: column;
+}
+.register-form .register {
+  font-size: 2.8rem;
+}
+.register-layout .desc {
+  max-width: 90%;
+  color: #b3b3b3;
+  font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.register-layout .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.register-layout .input-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+.register-layout .form-group .form-control {
+  width: 100%;
+  padding: 15px;
+  height: 74px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 1.8rem;
+}
+.register-layout .form-group .form-control:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.register-layout .form-group .form-control:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.register-layout .form-group label {
+  color: #888;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: end;
+  cursor: pointer;
+}
+.register-layout .form-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.register-layout .form-group .Term-Conditions {
+  color: #888;
+  margin-left: 4px;
+}
+.register-layout .btn {
+  width: 100%;
+  height: 54px;
+  font-size: 1.6rem;
+  color: #fff;
+  outline: none;
+  border-radius: 6px;
+}
+.register-layout .btn-register {
+  margin-top: 52px;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.register-layout .btn-register:hover {
+  background-color: #0069d9;
+}
+.register-layout .or {
+  color: #6c757d;
+  display: block;
+  text-align: center;
+  margin: 34px 0;
+}
+.register-layout a.btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-layout a.btn:not(:last-child) {
+  margin-bottom: 12px;
+}
+.register-layout a.btn .icon {
+  margin-right: 12px;
+}
+.register-layout .btn-fb {
+  background-color: #3b5998;
+}
+.register-layout .btn-fb:hover {
+  background-color: #344e86;
+}
+.register-layout .btn-tw {
+  background-color: #1da1f2;
+}
+.register-layout .btn-tw:hover {
+  background-color: #0d95e8;
+}
+.register-layout .btn-gg {
+  background-color: #ea4335;
+}
+.register-layout .btn-gg:hover {
+  background-color: #e82e1e;
+}
