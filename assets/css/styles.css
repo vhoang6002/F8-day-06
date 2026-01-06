@@ -176,6 +176,9 @@ body {
   align-items: center;
   padding: 0 16px;
 }
+.product-list .header-center:focus-within{
+  border-color: #000;
+}
 .product-list .header-center .icon-search {
   font-size: 1.8rem;
   color: #ccc;
