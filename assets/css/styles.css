@@ -152,6 +152,12 @@ body {
   padding: 0 28px;
   border-bottom: 1px solid #ccc;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
 }
 .product-list .header-left {
   display: flex;
@@ -176,7 +182,7 @@ body {
   align-items: center;
   padding: 0 16px;
 }
-.product-list .header-center:focus-within{
+.product-list .header-center:focus-within {
   border-color: #000;
 }
 .product-list .header-center .icon-search {
@@ -222,12 +228,11 @@ body {
 /* content */
 .product-list .content {
   display: flex;
-  position: relative;
 }
 .product-list .nav-bar {
   display: flex;
   flex-direction: column;
-  margin-top: 14px;
+  margin-top: calc(66px + 14px);
   padding-left: 12px;
   width: 100px;
   height: calc(100vh - 66px - 14px);
@@ -277,7 +282,7 @@ body {
 
 .product-list .main {
   margin-left: 160px;
-  margin-top: 56px;
+  margin-top: calc(56px + 66px);
   padding-bottom: 50px;
 }
 .product-list .main .all-course {
